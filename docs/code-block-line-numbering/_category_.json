@@ -1,0 +1,8 @@
+{
+  "label": "Code Block Line Numbering",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to enable default line numbering for all code blocks in Docusaurus, with an opt-out option."
+  }
+}

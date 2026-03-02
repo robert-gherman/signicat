@@ -43,11 +43,11 @@ export default function CodeBlockWrapper(props: Props): React.JSX.Element {
 
 ### Walkthrough
 
-1. **Check for `noLineNumbering`**: We check `props.metastring` for the keyword `noLineNumbering` and store the result in a boolean.
+1. Check for `noLineNumbering`: We check `props.metastring` for the keyword `noLineNumbering` and store the result in a boolean.
 
-2. **Set `showLineNumbers`**: We pass `showLineNumbers` as a ternary `false` if `noLineNumbering` is present, `true` otherwise. This means every code block gets line numbers by default.
+2. Set `showLineNumbers`: We pass `showLineNumbers` as a ternary `false` if `noLineNumbering` is present, `true` otherwise. This means every code block gets line numbers by default.
 
-3. **Spread all props**: We spread `{...props}` to forward everything (including `metastring`, `title`, language, children, etc.) unchanged to the original `CodeBlock`. The explicit `showLineNumbers` prop after the spread overrides whatever the original value was.
+3. Spread all props: We spread `{...props}` to forward everything (including `metastring`, `title`, language, children, etc.) unchanged to the original `CodeBlock`. The explicit `showLineNumbers` prop after the spread overrides whatever the original value was.
 
 ## Why `metastring`?
 
@@ -59,4 +59,4 @@ In Markdown code fences, everything after the language identifier goes into the 
 ```
 ````
 
-Custom keywords like `noLineNumbering` are **not** parsed into separate React props by Docusaurus, they stay inside `metastring` as a raw string. This is why our wrapper parses `metastring` directly rather than looking for a dedicated prop.
+Custom keywords like `noLineNumbering` are not parsed into separate React props by Docusaurus, they stay inside `metastring` as a raw string. This is why our wrapper parses `metastring` directly rather than looking for a dedicated prop.

@@ -8,7 +8,7 @@ title: Getting Started
 
 ## Prerequisites
 
-- **Node.js** version 18 or above
+- **Node.js** version 20 or above
 - A **Docusaurus** project (v3 recommended)
 
 ## Installation

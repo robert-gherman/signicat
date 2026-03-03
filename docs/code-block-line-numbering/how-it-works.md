@@ -25,7 +25,7 @@ We use the **wrapping** approach: our component imports the original and passes 
 
 ## The Wrapper Component
 
-```tsx title="src/theme/CodeBlock/index.tsx "
+```tsx title="src/theme/CodeBlock/index.tsx showLineNumbers  noLineNumbering"
 import React from "react";
 import CodeBlock from "@theme-original/CodeBlock";
 import type { WrapperProps } from "@docusaurus/types";

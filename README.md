@@ -5,7 +5,7 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 ## Installation
 
 ```bash
-npm
+npm install
 ```
 
 ## Local Development
@@ -19,5 +19,5 @@ This command starts a local development server and opens up a browser window. Mo
 ## Build
 
 ```bash
-npm build
+npm run build
 ```
